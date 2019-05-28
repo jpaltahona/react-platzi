@@ -1,0 +1,11 @@
+.Navbar{
+    background-color: #1B1B25;
+    
+    &__brand:hover{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &__brand-logo{
+        margin-right: 0.5rem
+    }
+}

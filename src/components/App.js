@@ -5,24 +5,19 @@ import confLogo from '../images/badge-header.svg';
 import './styles/app.scss'; 
 
 class App extends Component{
-    render(){ 
-
-        const firsName = "Jean";
-        const lastName = "Altahona";
-        
-        
+    render(){         
         return(
             <div className="Badge">
                 <div className="Badge_header">
                     <img src={confLogo} alt="Logo de la conferencia"/>
                 </div>
                 <div className="Badge__section-name">
-                    <img src="https://secure.gravatar.com/avatar/2a0699a78cb5d7317aba9c469f91db01" alt="avatar" className="avatar"/>
-                    <h1>{firsName} <br /> {lastName} </h1>
+                    <img src={this.props.avartUrl} alt="avatar" className="avatar"/>
+                    <h1>{this.props.firstname} <br /> {this.props.lastname} </h1>
                 </div>
                 <div className="Badge__section-info">
-                    <p>fronTend Engineer</p>
-                    <p> @sparragus </p>
+                    <p>{this.props.jobTile}</p>
+                    <p> {this.props.twitter} </p>
                 </div>
                 <div className="Badge__footer">
                     #Platzi
