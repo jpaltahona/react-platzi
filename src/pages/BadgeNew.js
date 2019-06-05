@@ -37,10 +37,10 @@ class BadgeNew extends Component{
                 <div className="container">
                     <div className="row">
                         <div className="col-6">
-                            <App firstname="Jean" 
-                                lastname="Altahona" 
-                                twitter="@master" 
-                                jobTitle="Senior Front Developer"
+                            <App firstName={this.state.form.firstName} 
+                                lastName={this.state.form.lastName}
+                                twitter={this.state.form.twitter} 
+                                jobTitle={this.state.form .jobTitle}
                                 avartUrl="https://jpaltahona.github.io/img/profile.jpg"
                                 />
                         </div>

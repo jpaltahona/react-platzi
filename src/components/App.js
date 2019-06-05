@@ -13,10 +13,10 @@ class App extends Component{
                 </div>
                 <div className="Badge__section-name">
                     <img src={this.props.avartUrl} alt="avatar" className="avatar"/>
-                    <h1>{this.props.firstname} <br /> {this.props.lastname} </h1>
+                    <h1>{this.props.firstName} <br /> {this.props.lastName} </h1>
                 </div>
                 <div className="Badge__section-info">
-                    <p>{this.props.jobTile}</p>
+                    <p>{this.props.jobTitle}</p>
                     <p> {this.props.twitter} </p>
                 </div>
                 <div className="Badge__footer">
