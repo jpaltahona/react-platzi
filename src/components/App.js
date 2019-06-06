@@ -1,30 +1,16 @@
-import React, { Component }from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Badges from '../pages/Badges';
+import BadgesNew from '../pages/BadgeNew';
 
-import confLogo from '../images/badge-header.svg';
-import './styles/app.scss'; 
-
-class App extends Component{
-    render(){         
-        return(
-            <div className="Badge">
-                <div className="Badge_header">
-                    <img src={confLogo} alt="Logo de la conferencia"/>
-                </div>
-                <div className="Badge__section-name">
-                    <img src={this.props.avartUrl} alt="avatar" className="avatar"/>
-                    <h1>{this.props.firstName} <br /> {this.props.lastName} </h1>
-                </div>
-                <div className="Badge__section-info">
-                    <p>{this.props.jobTitle}</p>
-                    <p> {this.props.twitter} </p>
-                </div>
-                <div className="Badge__footer">
-                    #Platzi
-                </div>
-            </div>  
-        );
-    }
+function App(){
+    return(
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/badges" component={Badges}/>
+                <Route exact path="/badges/new" component={BadgesNew}/>
+            </Switch>
+        </BrowserRouter>
+    );
 }
-
 export default App;

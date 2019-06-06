@@ -4,7 +4,7 @@ import '../components/styles/BadgeNew.scss'
 
 import Navbar from '../components/Navbar';
 import logotipo from '../images/badge-header.svg';
-import App from '../components/App' ;
+import Badge from '../components/Badge' ;
 import BadgeForm from '../components/BadgeFrom';
 
 class BadgeNew extends Component{
@@ -37,7 +37,7 @@ class BadgeNew extends Component{
                 <div className="container">
                     <div className="row">
                         <div className="col-6">
-                            <App firstName={this.state.form.firstName} 
+                            <Badge firstName={this.state.form.firstName} 
                                 lastName={this.state.form.lastName}
                                 twitter={this.state.form.twitter} 
                                 jobTitle={this.state.form .jobTitle}

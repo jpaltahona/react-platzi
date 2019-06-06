@@ -4,9 +4,9 @@ import '../components/styles/BadgeNew.scss'
 
 import Navbar from '../components/Navbar';
 import logotipo from '../images/badge-header.svg';
-import App from '../components/App' ;
 import BadgeForm from '../components/BadgeFrom';
 import BadgesList from '../components/BadgeList';
+import { Link } from 'react-router-dom';
 
 class Badges extends Component{
 
@@ -56,7 +56,7 @@ state = {
                 
                 <div className="Badges-container">
                     <div className="Badges__buttons">
-                        <a href="/badges/new">New badge </a>
+                        <Link to="/badges/new">New badge </ Link>
                     </div>
                 </div>
                 <div className="badges__list">

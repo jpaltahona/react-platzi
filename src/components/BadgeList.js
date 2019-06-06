@@ -11,7 +11,7 @@ class BadgeList extends Component{
                   <div>
                     <h5>{badge.firstName}</h5>
                     <span>{badge.twitter}</span><br />
-                    <spa>{badge.jobTitle}</spa>
+                    <span>{badge.jobTitle}</span>
                   </div>
               </li>
             );
