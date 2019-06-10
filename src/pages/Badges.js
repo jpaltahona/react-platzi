@@ -4,7 +4,6 @@ import '../components/styles/BadgeNew.scss'
 
 import Navbar from '../components/Navbar';
 import logotipo from '../images/badge-header.svg';
-import BadgeForm from '../components/BadgeFrom';
 import BadgesList from '../components/BadgeList';
 import { Link } from 'react-router-dom';
 

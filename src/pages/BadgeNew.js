@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import '../components/styles/BadgeNew.scss'
 
-import Navbar from '../components/Navbar';
 import logotipo from '../images/badge-header.svg';
 import Badge from '../components/Badge' ;
 import BadgeForm from '../components/BadgeFrom';
@@ -30,7 +29,6 @@ class BadgeNew extends Component{
     render(){
         return(
             <div>
-                <Navbar />
                 <div className="BadgeNew__hero">
                     <img className="img-fluid" src={logotipo}/>
                 </div>

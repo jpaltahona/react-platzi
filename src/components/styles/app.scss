@@ -5,13 +5,6 @@
     overflow: hidden;
     height: 380px;
 
-    .Badge_header{
-        padding: 0.5rem 0;
-        height: 80px;
-        background-color: #1B1B25;
-        display: flex;
-        justify-content: center;
-    }
     &__section-name{
         display: flex;
         justify-content: center;
@@ -41,4 +34,11 @@
         font-weight: bold;
         font-style: italic;
     }
+}
+.Badge_header{
+    padding: 0.5rem 0;
+    height: 80px;
+    background-color: #1B1B25;
+    display: flex;
+    justify-content: center;
 }
