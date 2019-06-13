@@ -29,8 +29,12 @@ class BadgeNew extends Component{
     render(){
         return(
             <div>
-                <div className="BadgeNew__hero">
-                    <img className="img-fluid" src={logotipo}/>
+                <div className="badges">
+                    <div className="Badges__hero">
+                        <div className="Badges__container">
+                            <img className="Badges_conf-logo" src={logotipo} alt="logo" />
+                        </div>
+                    </div>
                 </div>
                 <div className="container">
                     <div className="row">
