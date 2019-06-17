@@ -6,7 +6,7 @@ import  Layout from './Layout';
 import NotFound from './NotFound'; 
 
 function App(){
-    return(
+  return(
         <BrowserRouter>
             <Layout>
                 <Switch>
